@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name="calc",
+    name="mycalc",
     version='0.1',
-    py_modules=['hello'],
+    py_modules=['calc'],
     install_requires=[
         'Click' ,
         'pip>=19.0.3' ,
@@ -11,6 +11,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        calc=calc:cli
+        mycalc=calc:cli
     ''',
 )

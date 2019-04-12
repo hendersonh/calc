@@ -7,8 +7,8 @@ def cli():
 @cli.command()
 #@click.option('--verbose', is_flag=True, help="Will print verbose messages.")
 #@click.option('--name', '-n', multiple=True, default='', help='Who are you?')
-@click.argument('num1', help="The first number")
-@click.argument('num2', help="The sencond number")
+@click.argument('num1')
+@click.argument('num2')
 def add(num1, num2):
     """Will add two given numbers."""
-    print('{} + {} = {}'.format(num1, num2, num1 + num2 ))  
+    print('{} + {} = {}'.format(num1, num2, int(num1) + int(num2) ))  

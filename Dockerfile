@@ -7,4 +7,4 @@ ADD . /app
 
 RUN pip install . 
 #CMD ["add", "2", "2"]
-ENTRYPOINT [ "mycalc" ]
+#ENTRYPOINT [ "mycalc" ]

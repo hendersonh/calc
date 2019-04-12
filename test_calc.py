@@ -1,8 +1,8 @@
 import pytest
-import calc
+import calc 
 import click
 
-def test_calc_add():
+def add():
     assert calc.add(5, 10) == 15
 
 

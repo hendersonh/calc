@@ -1,12 +1,9 @@
 
 pipeline {
-    agent none 
+    agent { dockerfile true }
     stages {
-        stage('Example Build') {
-	
-            agent { docker 'rackspacedot/python37' } 
+        stage('Test') {
             steps {
-                echo 'Testing <call add> command'
                 sh 'mycalc add 10 10'
             }
         }

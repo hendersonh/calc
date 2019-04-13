@@ -1,7 +1,7 @@
 import pytest
 import calc 
 
-@pytest.mark.parametrize('n1', 'n2', 'sum', [5, 5, 10,
+@pytest.mark.parametrize('n1, n2, sum', [5, 5, 10,
                                              -5, 5, 0,
                                              -10, -10, -20,
                                              0, 100, 100

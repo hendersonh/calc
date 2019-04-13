@@ -12,7 +12,7 @@ def test_add(n1, n2, sum):
 
 @pytest.mark.parametrize('n1, n2, result', [(5, 5, 0),
                                              (15, 5, 10),
-                                             (100, -10, 90),
+                                             (100, -10, 110),
                                              (100, 50, 50)
                                              ])
 def test_sub(n1, n2, result):

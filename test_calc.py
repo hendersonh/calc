@@ -11,7 +11,7 @@ def test_add(n1, n2, sum):
 
 
 @pytest.mark.parametrize('n1, n2, result', [(5, 5, 0),
-                                             (-5, 5, 10),
+                                             (-5, 5, -10),
                                              (-10, -10, 0),
                                              (0, 100, -100)
                                              ])

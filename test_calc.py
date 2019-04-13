@@ -16,4 +16,4 @@ def test_add(n1, n2, sum):
                                              (100, 50, 50)
                                              ])
 def test_sub(n1, n2, result):
-    assert result == calc.sub(n1, n1)
+    assert result == calc.sub(n1, n2)

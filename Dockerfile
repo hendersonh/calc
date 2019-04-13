@@ -6,5 +6,5 @@ WORKDIR /app
 ADD . /app
 
 RUN pip install .
-CMD ["sub", "20", "10"]
-ENTRYPOINT [ "mycalc" ]
+#CMD ["sub", "20", "10"]
+#ENTRYPOINT [ "mycalc" ]

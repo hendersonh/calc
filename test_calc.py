@@ -2,6 +2,7 @@ import pytest
 import calc 
 
 def test_add():
-    assert calc.add(5, 10) == 15
+    result = calc.add(5, 10) 
+    assert result == 15
 
 

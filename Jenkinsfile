@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh "mycalc sub 100 50" 
+                sh "mycalc sub -n 100 50" 
                 sh 'pytest -v'
             }
         }

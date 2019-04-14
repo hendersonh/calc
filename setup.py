@@ -1,16 +1,22 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="mycalc",
     version='0.1',
-    py_modules=['calc', 'cli' ],
+
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},
+
     install_requires=[
         'Click' ,
         'pip>=19.0.3' ,
         'pytest' ,
     ],
+    tests_require=['pytest', 'pytest-mock'],
+    extras_require={'mongo': 'pymongo'},
+
     entry_points='''
         [console_scripts]
-        mycalc=cli:cli
+        mycalc=calc.cli:cli
     ''',
 )

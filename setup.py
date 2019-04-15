@@ -11,6 +11,7 @@ setup(
         'Click' ,
         'pip>=19.0.3' ,
         'pytest' ,
+        'pyinstaller'
     ],
     tests_require=['pytest', 'pytest-mock'],
     extras_require={'mongo': 'pymongo'},

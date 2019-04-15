@@ -18,4 +18,7 @@ def sub(n):
     """Enter <-n> follow by two number; we will subtract 2nd number from 1st number"""
     result = calc.sub(n[0], n[1])
     print('{} - {} = {}'.format(n[0], n[1], result))
-     
+
+
+if __name__ == '__main__':
+    cli()      

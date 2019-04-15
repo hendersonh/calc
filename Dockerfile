@@ -6,5 +6,6 @@ WORKDIR /app
 ADD . /app
 
 RUN pip install .
+RUN pyinstaller src/calc/cli.py
 #CMD ["sub", "-n", "100", "20"]
 #ENTRYPOINT [ "mycalc" ]
